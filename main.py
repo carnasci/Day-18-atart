@@ -19,6 +19,7 @@ timmy = Turtle()
 #     n += 1
 
 timmy.pensize(3)
+timmy.speed("fast")
 
 def move_left():
     timmy.left(90)
