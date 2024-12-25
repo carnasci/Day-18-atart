@@ -45,15 +45,24 @@ timmy = Turtle()
 #CHALLENGE 5
 
 timmy.speed("fastest")
-n = 0
+# n = 0
+#
+# while n <= 360:
+#
+#     for _ in range(100):
+#         timmy.color(get_random_color())
+#         timmy.circle(100)
+#         n += 5
+#         timmy.left(n)
 
-while n <= 360:
+def draw_spirograph(size_of_gap):
 
-    for _ in range(100):
+    for _ in range(int(360 / size_of_gap)):
         timmy.color(get_random_color())
         timmy.circle(100)
-        n += 5
-        timmy.left(n)
+        timmy.setheading(timmy.heading() + size_of_gap)
+
+draw_spirograph(5)
 
 # for i in range(4):
 #     timmy.forward(100)
