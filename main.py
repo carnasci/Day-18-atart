@@ -18,30 +18,42 @@ timmy = Turtle()
 #         timmy.right(360 / n)
 #     n += 1
 
-timmy.pensize(3)
-timmy.speed("fast")
+# timmy.pensize(3)
+# timmy.speed("fast")
+#
+# def move_left():
+#     timmy.left(90)
+#     timmy.forward(15)
+#
+# def move_right():
+#     timmy.right(90)
+#     timmy.forward(15)
+#
+# def move_forward():
+#     timmy.forward(15)
+#
+# def move_backward():
+#     timmy.backward(15)
+#
+# directions = [move_left, move_right, move_backward, move_forward]
+#
+# for _ in range(50):
+#     timmy.pencolor(get_random_color())
+#     direction = random.choice(directions)
+#     direction()
 
-def move_left():
-    timmy.left(90)
-    timmy.forward(15)
+#CHALLENGE 5
 
-def move_right():
-    timmy.right(90)
-    timmy.forward(15)
+timmy.speed("fastest")
+n = 0
 
-def move_forward():
-    timmy.forward(15)
+while n <= 360:
 
-def move_backward():
-    timmy.backward(15)
-
-directions = [move_left, move_right, move_backward, move_forward]
-
-for _ in range(50):
-    timmy.pencolor(get_random_color())
-    direction = random.choice(directions)
-    direction()
-
+    for _ in range(100):
+        timmy.color(get_random_color())
+        timmy.circle(100)
+        n += 5
+        timmy.left(n)
 
 # for i in range(4):
 #     timmy.forward(100)
